@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Dzmitry Yukhniuk CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+        <header>
+            <p class="quite">Dzmitry Yukhniuk</p>
+            <button id="openDrawer">Contact Me</button>
+        </header>
+        <main>
+            <!-- drawer -->
+            <div id="drawer">
+            </div>
+            <div class="centred wrapper ">
+                <div class="video-wraper">
+                    <video src="/rsschool-cv/assets/img/video.mp4" controls autoplay muted loop width="320"></video>
+                </div>
+                <h1>Hey, I’m Dzmitry,<br>Designer & Art Director</h1>
+                <p>I lead design teams and craft products people love to use</p>
+            </div>
+            <div class="wrapper">
+                <h2>Summary</h2>
+                <p> With 14 years as a Product Designer and Art Director, I excel in B2C and B2B SaaS software for iOS, Android, and web platforms. I bring strong UX/UI skills and startup experience, working with top clients in banking, government, betting, e-learning, consulting, and travel. My achievements include boosting revenue, reducing losses, and improving user retention.</p><br>
+                <p><em>My goal from the Rolling Scopes courses is to acquire new skills in order to solidify my knowledge base at the Junior/Middle Frontend Developer level.</em></p>
+            </div>
+            <div class="wrapper">
+                <h2>Code example</h2>
+                <aside>
+                    <p><em>Example JavaScript code</em></p>
+                    <p><code>function multiply(a, b) {<br>
+                        return a * b<br>} </code>
+                    </p>
+                </aside>
+            </div>
+            <div class="wrapper">
+                <h2>Skills</h2>
+                <ul>
+                    <li><p>HTML5, CSS</p></li>
+                    <li><p>JavaScript Basics</p></li>
+                    <li><p>Git, GitHub</p></li>
+                    <li><p>Figma, Adobe Photoshop, Illustrator, After Effect</p></li>
+                </ul>
+            </div>    
+            <div class="wrapper">
+                <h2>Experience</h2>
+                <ul>
+                <li><p>Nov 2021 – Now, <strong>Lead Experience Designer, EPAM Systems</strong></p></li>
+                <li><p>Jul 2020 – Apr 2021, <strong>Team Lead, iFuture Belarus</strong></p></li>
+                <li><p>Mar 2018 – Jul 2020, <strong>UX/UI Designer, iFuture Belarus</strong></p></li>
+                <li><p>Jan 2017 – Feb 2018, <strong>Lead Designer, Alfa-Bank Belarus</strong></p></li>
+                <li><p>Feb 2018 – Apr 2015, <strong>Senior Designer, Alfa-Bank Belarus</strong></p></li>
+                <li><p>Nov 2013 – Oct 2017, <strong>CEO, Fine Pick Machine</strong></p></li>
+                </ul>
+            </div>
+            <div class="wrapper">
+                <h2>Education</h2>
+                <ul>
+                    <li><p>2010 – 2015, <strong>Computer-Aided Design, Bachelor’s degree Belarusian State University of Informatics and Radioelectronics</strong>.</p></li>
+                    <li><p>2015 – 2017, <strong>Art-Directions, Skvot</strong>.</p></li>
+                </ul>
+            </div>
+            <div class="wrapper">
+                <h2>Languages </h2>
+                <ul>
+                    <li><p>Russian: <strong>Native</strong></p></li>
+                    <li><p>Belarussian: <strong>C1</strong></p></li>
+                    <li><p>English (EPAM sertification): <strong>B2+</strong></p></li>
+                    <li><p>Polish: <strong>A1+</strong></p></li>
+                </ul>
+            </div>
+        </main> 
+    <footer>
+        <a href="https://github.com/Yukhniuk"><span class="quite">2026, Yukhniuk's GitHub</span></a>
+        <a href="https://rs.school/courses/javascript"><span class="quite">JS / Front-end Course</span></a>
+        <img src="assets/svg/rs-school-logo.svg" alt="icon" class="logo">
+    </footer>
+     <script>
+            document.getElementById('open-drawer-button').addEventListener('click', function() {
+                document.getElementById('drawer').classList.add('active');
+                document.getElementById('overlay').classList.add('active');
+            });
+
+            document.getElementById('close-drawer-button').addEventListener('click', function() {
+                document.getElementById('drawer').classList.remove('active');
+                document.getElementById('overlay').classList.remove('active');
+            });
+
+            document.getElementById('overlay').addEventListener('click', function() {
+                document.getElementById('drawer').classList.remove('active');
+                document.getElementById('overlay').classList.remove('active');
+            });
+        </script>
+  </body>
+</html>
